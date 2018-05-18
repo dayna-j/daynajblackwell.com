@@ -13,11 +13,14 @@ body,html{
 	width: 100%;
 	height: 100%;
 	background-color: #282828;
+/*	background-color: #383838;*/
 
 	display: flex;
   justify-content: center;
   align-items: center;
 	overflow: hidden;
+	
+	
 }
 
 header{
@@ -28,7 +31,7 @@ header{
 /*	height: auto;*/
 	background-color: #181818;
 	border-bottom: 2px inset grey;
-	z-index: 1000;
+	z-index: 1500;
 	
 }
 
@@ -37,11 +40,15 @@ nav {
 	display: flex;
   justify-content: flex-end;
 /*  font-family: 'Exo', sans-serif;*/
-	font-family: sans-serif;
+	
+	font-family: 'Open Sans', sans-serif;
+
 /*	font-family: 'Roboto', sans-serif;*/
 	margin: 0;
 /*	padding: 20px;*/
 	font-weight: 700;
+/*	border: 1px solid grey;*/
+	
 }
 
 ul{
@@ -65,29 +72,34 @@ ul li a{
 	border-radius: 5px;
 /*	margin: 0 5px;*/
 	margin-right: 15px;
-  padding: 10px 20px 10px;
-	
-	
+  padding: 5px 20px 5px; /* controls hover area */
+	transition: all .35s;
 }
 
-ul li a:active{
+ul li a.header-link:active{
 	background-color: grey;
 }
 
-ul li a:hover{
-	background-color: aliceblue;
+ul li a.header-link:hover{
+	background-color: #000000;
 }
 
 .content-container{
-/*	background-color: gainsboro;*/
+/*	background-color: #303030;*/
 /*  align-items: center;*/
 /*	position: relative;*/
-	margin-top: 140px;
-	height: 100%;
-	width: 100%;
+		margin-top: 140px;
+		height: 100%;
+		width: 100%;
 /*	  margin: 0 auto;*/
     max-width: 700px;
     padding: 20px 40px;
+/*	border-right: 1px solid white;*/
+/*	border-left: 1px solid white;*/
+	
+/*	background: url("/images/magnolia-3324074.svg") center center fixed;*/
+		
+/*		opacity: .2;*/
 	
 }
 
@@ -109,26 +121,41 @@ ul li a:hover{
 }
 
 .intro-statement{
-	  font-size: 2.5em;
+	  font-size: 1.5em;
+		margin-top: 50px;
     font-weight: 700;
-    line-height: 1.15em;
+    line-height: 1.15em; ////////////
 }
 
 .intro-statement h1{
 /*		margin: 1.5em 0 0.25em;*/
 /*  color: #585858;*/
 	color: #181818;
-	font-family: 'Exo', sans-serif;
+	font-family: 'Electrolize', sans-serif;
+/*	font-family: 'Oswald', sans-serif;*/
+/*	font-family: 'Open Sans', sans-serif;*/
 }
 
+.icon-container{
+/*	height: 100px;*/
+/*	background-color: #383838;*/
+	border: 1px solid white;
+/*	transition: all 1s;*/
+	
+}
 
+.icon-container:hover{
+	
+}
 
+.icon-container a.icon-link{
+	border: 1px solid pink;
+}
 
 @media (max-width: 900px){
 nav li a {
     padding: 10px 10px 10px;
     margin-right: 5px;
 		border-radius: 5px;
-
 	}
 }
