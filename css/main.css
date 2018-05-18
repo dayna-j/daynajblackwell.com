@@ -14,50 +14,49 @@ body,html{
 	height: 100%;
 	background-color: #282828;
 /*	background-color: #383838;*/
-
 	display: flex;
   justify-content: center;
   align-items: center;
 	overflow: hidden;
-	
-	
 }
 
 header{
 	position: absolute;
 	top: 0;
 	width: 100%;
-/*	height: 70px;*/
-/*	height: auto;*/
 	background-color: #181818;
 	border-bottom: 2px inset grey;
 	z-index: 1500;
-	
 }
 
 nav {
 	border-bottom: none;
 	display: flex;
   justify-content: flex-end;
-/*  font-family: 'Exo', sans-serif;*/
-	
 	font-family: 'Open Sans', sans-serif;
-
-/*	font-family: 'Roboto', sans-serif;*/
 	margin: 0;
 /*	padding: 20px;*/
 	font-weight: 700;
 /*	border: 1px solid grey;*/
-	
-}
-
-ul{
-
 }
 
 ul li{
-	list-style: none;
 	display: inline-block;
+	list-style: none;
+	
+}
+
+ul li a{
+	text-decoration: none;
+}
+
+nav ul{
+
+}
+
+nav ul li{
+/*	list-style: none;*/
+/*	display: inline-block;*/
 /*	text-align: left;*/
 	line-height: 1em;
 	margin: 10px;
@@ -66,9 +65,9 @@ ul li{
 	
 }
 
-ul li a{
+nav ul li a{
 /*	padding: 10px 10px 10px;*/
-	text-decoration: none;
+/*	text-decoration: none;*/
 	border-radius: 5px;
 /*	margin: 0 5px;*/
 	margin-right: 15px;
@@ -76,11 +75,11 @@ ul li a{
 	transition: all .35s;
 }
 
-ul li a.header-link:active{
+nav ul li a.header-link:active{
 	background-color: grey;
 }
 
-ul li a.header-link:hover{
+nav ul li a.header-link:hover{
 	background-color: #000000;
 }
 
@@ -137,10 +136,15 @@ ul li a.header-link:hover{
 }
 
 .icon-container{
-/*	height: 100px;*/
+	position: relative;
+/*		height: 100px;*/
 /*	background-color: #383838;*/
-	border: 1px solid white;
+/*	border: 1px solid white;*/
 /*	transition: all 1s;*/
+	
+/*	display: flex;*/
+/*	justify-content: center;*/
+/*  align-items: center;*/
 	
 }
 
@@ -149,11 +153,41 @@ ul li a.header-link:hover{
 }
 
 .icon-container a.icon-link{
-	border: 1px solid pink;
+/*	border: 1px solid pink;*/
+	
 }
 
+.icon-container ul li{
+	margin: 10px;
+
+}
+
+.icon-container ul li a{
+/*	margin-right: 15px;*/
+/*	margin: 0 auto;*/
+	outline: none;
+	
+}
+
+.fab{
+	color: #080808;
+	transition: all .2s;
+}
+
+.fa-linkedin{
+/*	background-color: black;*/
+/*	color: #080808;*/
+	border: none;
+	
+}
+
+.fab:hover{
+	color: floralwhite;
+}
+
+
 @media (max-width: 900px){
-nav li a {
+nav ul li a {
     padding: 10px 10px 10px;
     margin-right: 5px;
 		border-radius: 5px;
