@@ -12,8 +12,12 @@ html,body {
 body,html{
 	width: 100%;
 	height: 100%;
-	background-color: #282828;
 /*	background-color: #383838;*/
+	background-color: #282828;
+
+	
+	
+/*	background-color: darkslategrey;*/
 	display: flex;
 	
   justify-content: center;
@@ -26,6 +30,11 @@ header{
 	top: 0;
 	width: 100%;
 	background-color: #181818;
+	
+	
+/*	background-color: #497b7bff;*/
+	
+	
 	border-bottom: 2px inset grey;
 	z-index: 1500;
 }
@@ -34,10 +43,13 @@ nav {
 	border-bottom: none;
 	display: flex;
   justify-content: flex-end;
+	justify-content: center;
+	
 	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
 	margin: 0;
 /*	padding: 20px;*/
-	font-weight: 700;
+	font-weight: 600;
 /*	border: 1px solid grey;*/
 }
 
@@ -49,6 +61,7 @@ ul li{
 
 ul li a{
 	text-decoration: none;
+
 }
 
 nav ul{
@@ -58,46 +71,40 @@ nav ul{
 nav ul li{
 	line-height: 1em;
 	margin: 10px;
-	
-	
-	
 }
 
 nav ul li a{
 /*	padding: 10px 10px 10px;*/
-/*	text-decoration: none;*/
 	border-radius: 5px;
 /*	margin: 0 5px;*/
 	margin-right: 15px;
   padding: 5px 20px 5px;   
 	transition: all .35s;
+/*	border: 2px solid darkslategrey;*/
+	color: #888888;
 }
 
 nav ul li a.header-link:active{
 	background-color: grey;
+	
 }
 
 nav ul li a.header-link:hover{
 	background-color: #000000;
+	
+/*	background-color: darkslategrey;*/
 }
 
 .content-container{
 /*	background-color: #303030;*/
+/*	background-color: darkslategray;*/
 /*  align-items: center;*/
 /*	position: relative;*/
 		margin-top: 140px;
 		height: 100%;
 		width: 100%;
-/*	  margin: 0 auto;*/
     max-width: 700px;
     padding: 20px 40px;
-/*	border-right: 1px solid white;*/
-/*	border-left: 1px solid white;*/
-	
-/*	background: url("/images/magnolia-3324074.svg") center center fixed;*/
-		
-/*		opacity: .2;*/
-	
 }
 
 .about-content{
@@ -114,7 +121,8 @@ nav ul li a.header-link:hover{
 	width: 230px;
 /*	height: 230px;*/
 	border-radius: 100%;
-	border: 3px solid #181818;
+	border: 5px solid #181818;
+/*	border: 5px solid darkslategray;*/
 }
 
 .intro-statement{
@@ -130,6 +138,9 @@ nav ul li a.header-link:hover{
 /*	margin: 1.5em 0 0;*/
 /*  color: #585858;*/
 	color: #181818;
+	
+/*	color: #497b7bff;*/
+	
 	font-family: 'Electrolize', sans-serif;
 /*	font-family: 'Oswald', sans-serif;*/
 /*	font-family: 'Open Sans', sans-serif;*/
@@ -138,14 +149,14 @@ nav ul li a.header-link:hover{
 .icon-container{
 	position: relative;
 /*		height: 100px;*/
-/*	background-color: #383838;*/
+	background-color: #383838;
 /*	border: 1px solid white;*/
 /*	transition: all 1s;*/
 	
 	display: flex;
 	justify-content: center;
   align-items: center;
-	
+	border-radius: 15px;
 	
 	
 }
@@ -179,14 +190,15 @@ nav ul li a.header-link:hover{
 
 .fab{
 	color: #181818;
+/*	color: #497b7bff;*/
 	transition: all .4s;
 	
 }
 
 .fa-linkedin{
-/*	background-color: black;*/
-/*	color: #080808;*/
-	border: none;
+
+	
+/*	border: none;*/
 	
 }
 
