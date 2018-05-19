@@ -15,6 +15,7 @@ body,html{
 	background-color: #282828;
 /*	background-color: #383838;*/
 	display: flex;
+	
   justify-content: center;
   align-items: center;
 	overflow: hidden;
@@ -55,9 +56,6 @@ nav ul{
 }
 
 nav ul li{
-/*	list-style: none;*/
-/*	display: inline-block;*/
-/*	text-align: left;*/
 	line-height: 1em;
 	margin: 10px;
 	
@@ -71,7 +69,7 @@ nav ul li a{
 	border-radius: 5px;
 /*	margin: 0 5px;*/
 	margin-right: 15px;
-  padding: 5px 20px 5px; /* controls hover area */
+  padding: 5px 20px 5px;   
 	transition: all .35s;
 }
 
@@ -123,11 +121,13 @@ nav ul li a.header-link:hover{
 	  font-size: 1.5em;
 		margin-top: 50px;
     font-weight: 700;
-    line-height: 1.15em; ////////////
+/*    line-height: 1.15em; ////////////*/
+		text-align: center;
+
 }
 
 .intro-statement h1{
-/*		margin: 1.5em 0 0.25em;*/
+/*	margin: 1.5em 0 0;*/
 /*  color: #585858;*/
 	color: #181818;
 	font-family: 'Electrolize', sans-serif;
@@ -142,14 +142,20 @@ nav ul li a.header-link:hover{
 /*	border: 1px solid white;*/
 /*	transition: all 1s;*/
 	
-/*	display: flex;*/
-/*	justify-content: center;*/
-/*  align-items: center;*/
+	display: flex;
+	justify-content: center;
+  align-items: center;
+	
+	
 	
 }
 
 .icon-container:hover{
 	
+}
+
+.icon-container ul{
+/*	margin-top: 80px;*/
 }
 
 .icon-container a.icon-link{
@@ -158,20 +164,23 @@ nav ul li a.header-link:hover{
 }
 
 .icon-container ul li{
-	margin: 10px;
+	margin-right: 40px;;
+	
 
 }
 
 .icon-container ul li a{
 /*	margin-right: 15px;*/
-/*	margin: 0 auto;*/
+	margin: 0 auto;
+
 	outline: none;
 	
 }
 
 .fab{
-	color: #080808;
-	transition: all .2s;
+	color: #181818;
+	transition: all .4s;
+	
 }
 
 .fa-linkedin{
@@ -182,7 +191,7 @@ nav ul li a.header-link:hover{
 }
 
 .fab:hover{
-	color: floralwhite;
+	color: #080808;
 }
 
 
