@@ -78,7 +78,7 @@ nav ul li a.header-link{
 	border-radius: 5px;
 /*	margin: 0 5px;*/
 /*	margin-right: 15px;*/
-  padding: 5px 20px 5px;   
+  padding: 5px 10px;   
 	transition: all .35s;
 /*	border: 2px solid darkslategrey;*/
 	color: #888888;
@@ -206,7 +206,7 @@ nav ul li a.header-link:hover{
 .fab:hover{
 	color: #080808;
 }
-
+/* BEGIN RESUME SECTION */
 #resumeBody{
 		
 }
@@ -214,15 +214,30 @@ nav ul li a.header-link:hover{
 #embeddedResume{
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+	
+	margin-top: 20px;
 }
 
 
 
-@media (max-width: 900px){
+@media (min-width: 900px){
 nav ul li a {
-    padding: 10px 10px 10px;
-    margin-right: 5px;
-		border-radius: 5px;
+/*    padding: 5px 50px;*/
+/*    margin-right: 5px;*/
+/*	border: 20px solid red;*/
+	
+	margin: 20px;
 	}
 }
+
+
+@media (max-width: 640px){
+nav {
+ font-size: 1em;   
+	}
+}
+
+
+
