@@ -207,6 +207,17 @@ nav ul li a.header-link:hover{
 	color: #080808;
 }
 
+#resumeBody{
+		
+}
+
+#embeddedResume{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
 
 @media (max-width: 900px){
 nav ul li a {
