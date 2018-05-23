@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	
-	$(function(){	$('#menu').slicknav();});	
+	$(function(){	$('#menu').slicknav();});
 	
 	
 	
