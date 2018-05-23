@@ -7,6 +7,7 @@ html,body {
   box-sizing: inherit;
 }
 
+.hidden{display: none;}
 .noSelect{user-select: none;}
 
 body,html{
@@ -84,6 +85,18 @@ nav ul li a.header-link:hover{
 	color: #DFD7DE
 /*	background-color: darkslategrey;*/
 }
+
+.slicknav_menu{
+	display: none;
+	position: absolute;
+	top: 10;
+	z-index: 10000;
+	
+	
+	
+	  
+    
+}}
 
 .content-container{
 /*	background-color: #303030;*/
@@ -226,3 +239,37 @@ nav {
 	}
 }
 
+/*@media screen and (max-width: 560px) {*/
+
+@media screen and (max-width: 460px) {
+	
+	nav{display: none;}
+	
+	.slicknav_menu{
+		display: block;
+    background-color: #282828;
+/*		border: 1px solid red;*/
+	}
+	
+	.slicknav_menu ul li a{
+    color: #888888;
+    font-size: 1.3em;
+    text-align: center;
+/*    background: lightgreen;*/
+    border: 3px solid #383838;
+		transition: all .3s;
+}
+	
+	.slicknav_menu ul li a:hover{
+		background-color: #000000;
+		color: #DFD7DE
+	}
+	
+	
+	.content-container{
+/*		margin-top: -100px;*/
+	}
+	
+	
+	
+}

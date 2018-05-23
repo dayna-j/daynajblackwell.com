@@ -1,7 +1,13 @@
 $(document).ready(function(){
 	
 	
-	$(function(){	$('#menu').slicknav();});
+	$(function(){	$('#menu').slicknav({
+		label: 'I\'m small',
+		appendTo: '#test' 
+		
+		
+		
+	});});
 	
 	
 	
