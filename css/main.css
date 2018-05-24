@@ -219,6 +219,7 @@ nav ul li a.header-link:active{
 /* BEGIN RESUME SECTION */
 
 #resumeBody{
+	background-color: #383838;
 }
 
 button{
@@ -247,7 +248,7 @@ button{
 /* BEGIN CONTACT SECTION */
 
 #contactBody{
-/*	background-color: red;*/
+	background-color: #383838;
 	
 	
 
@@ -256,7 +257,7 @@ button{
 #formContainer{
 	display: block;
 /*	background-color: darkgray;*/
-	height: 50%;
+/*	height: 50%;*/
 	width: 75%;
 	position: absolute;
   top: 50%;
@@ -265,20 +266,32 @@ button{
 /*	border: 2px solid azure;*/
 	
 	
+/*	margin-top: -20px;*/
+	
+	
+	
 }
 
 
 #formContainer h1{
-	margin: 0px; /* H1-H6 HAVE DEFAULT MARGINS  */
+	margin: 0px;  
+	margin-bottom: -15px;
 /*	background-color: red;*/
 	color: aliceblue;
 	font-size: 2.4em;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Oswald', sans-serif;
+
+
 }
 
-#formContainer h3{
+#formContainer h4{
 	margin: 0px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	font-family: 'Open Sans', sans-serif;
+/*		font-family: 'Oswald', sans-serif;*/
+
 
 }
 
@@ -287,23 +300,57 @@ input{
 	padding: 15px;
 	border-radius: 7px;
 	margin-top: 15px;
+		font-family: 'Open Sans', sans-serif;
+
 }
 
 input[type=email]{
-/*	background-color: red;*/
-	
+
+	width: 40%;
 /*	margin: 10px;*/
+	background-color: #C9C9C9;
+	border: 2px solid black;
+	background: url('https://pixabay.com/get/eb31b90b29f6013ed1584d05fb094197e171e0dc1eac104497f7c07ba4e4bcbf/white-2484120_1280.png') no-repeat;
+
 }
 
-input[type=textarea]{
-	width: 100%;
+textarea{
+	border-radius: 7px;
 	margin-top: 15px;
+	width: 100%;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #C9C9C9;
+	border: 2px solid black;
+/*	background: url("https://pixabay.com/get/ea37b3082cf1083ed1584d05fb094197e171e0dc1eac104497f7c07ba4e8bcba/grid-3227459_1280.jpg") no-repeat center center;*/
+	
+/*	background: url("https://pixabay.com/get/ea36b10e2cfc063ed1584d05fb094197e171e0dc1eac104497f7c07ba4e5bdba/background-3301487_1280.jpg") no-repeat center center;*/
+	
+	background: url('https://pixabay.com/get/eb31b90b29f6013ed1584d05fb094197e171e0dc1eac104497f7c07ba4e4bcbf/white-2484120_1280.png') no-repeat center center;
+}
+
+
+
+textarea:focus{
+	opacity: .8;
+
 }
 
 input[type=submit]{
-	
-	
+	width: 100%;
+	border-color: black;
+/*	border: none;*/
+/*	background-color: azure;*/
+	background-color: #202020;
+/*	background-color: dimgrey;*/
+	border: 2px solid black;
 }
+
+input:focus{
+	opacity: .8;
+}
+
+
 
 @media (min-width: 900px){
 nav ul li a {
