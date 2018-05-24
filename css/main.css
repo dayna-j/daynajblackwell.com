@@ -250,8 +250,6 @@ button{
 #contactBody{
 	background-color: #383838;
 	
-	
-
 }
 
 #formContainer{
@@ -308,9 +306,9 @@ input[type=email]{
 
 	width: 40%;
 /*	margin: 10px;*/
-	background-color: #C9C9C9;
+	background-color: #e8e8e8;
 	border: 2px solid black;
-	background: url('https://pixabay.com/get/eb31b90b29f6013ed1584d05fb094197e171e0dc1eac104497f7c07ba4e4bcbf/white-2484120_1280.png') no-repeat;
+/*	background: url('https://pixabay.com/get/eb31b90b29f6013ed1584d05fb094197e171e0dc1eac104497f7c07ba4e4bcbf/white-2484120_1280.png') no-repeat;*/
 
 }
 
@@ -322,11 +320,11 @@ textarea{
 	font-family: 'Open Sans', sans-serif;
 	background-color: #C9C9C9;
 	border: 2px solid black;
-/*	background: url("https://pixabay.com/get/ea37b3082cf1083ed1584d05fb094197e171e0dc1eac104497f7c07ba4e8bcba/grid-3227459_1280.jpg") no-repeat center center;*/
+	background: url("https://www.daynajblackwell.com/images/grid-3227459_1280.jpg") center center;
 	
 /*	background: url("https://pixabay.com/get/ea36b10e2cfc063ed1584d05fb094197e171e0dc1eac104497f7c07ba4e5bdba/background-3301487_1280.jpg") no-repeat center center;*/
 	
-	background: url('https://pixabay.com/get/eb31b90b29f6013ed1584d05fb094197e171e0dc1eac104497f7c07ba4e4bcbf/white-2484120_1280.png') no-repeat center center;
+/*	background: url('https://pixabay.com/get/eb31b90b29f6013ed1584d05fb094197e171e0dc1eac104497f7c07ba4e4bcbf/white-2484120_1280.png') no-repeat center center;*/
 }
 
 
@@ -340,10 +338,9 @@ input[type=submit]{
 	width: 100%;
 	border-color: black;
 /*	border: none;*/
-/*	background-color: azure;*/
-	background-color: #202020;
-/*	background-color: dimgrey;*/
+	background-color: lightyellow;
 	border: 2px solid black;
+	font-family: 'Open Sans', sans-serif;
 }
 
 input:focus{
@@ -360,9 +357,14 @@ nav ul li a {
 
 
 @media (max-width: 640px){
+
+	
 nav {
  font-size: 1em;   
 	}
+	
+
+	
 }
 
 /*@media screen and (max-width: 560px) {*/
@@ -395,6 +397,14 @@ nav {
 	.content-container{
 /*		margin-top: -100px;*/
 	}
+	
+	input[type=email]{
+		width: 100%;
+	}
+	
+textarea{
+height: 150px;	
+}	
 	
 	
 	
