@@ -1,53 +1,38 @@
-function RandomColor() {
-  var hex = (Math.round(Math.random()*0xffffff)).toString(16);
-  while (hex.length < 6) hex = "0" + hex;
-  return hex;
+function randomColor() {
+    var letters = 'ABCDE'.split('');
+    var color = '#';
+    for (var i=0; i<3; i++ ) {
+        color += letters[Math.floor(Math.random() * letters.length)];
+    }
+    return color;
 }
-
 
 
 
 $(document).ready(function(){
 	
-	
-	
-	
 	$(function(){	$('#menu').slicknav({
 		label: 'I\'m small',
-		prependTo: 'body' 
+		prependTo: 'body',
+		duration: 450
 	});});
 	
-	var spanArray = [];
+	var greeting = document.getElementById('greeting');
+	var strArray = greeting.innerText.split('');
+	greeting.innerText = '';
+	strArray.forEach(function(letter, index){
+  // wrap every letter in a span.  
+  var tempSpan = document.createElement('span');
+  var tempTextNode = 	document.createTextNode(letter);
+  tempSpan.appendChild(tempTextNode);
+	var tempColor = randomColor();
+	tempSpan.style.color = tempColor;
+	setTimeout(function(){
+  greeting.appendChild(tempSpan);  
+  }, index*150)});
 	
-	var	greeting = document.getElementById('greeting');
-	// gets "Hi, I'm Dayna!" and places each character into an array
-	var greetingArray = greeting.innerText.split('');
-	
-	
-	greetingArray.forEach(function(letter, i){
-		
-		
-		
-		setTimeout(function(i){
-		var span = document.createElement('span');
-		span.appendChild(document.createTextNode(letter));
-		span.classList.add('colored');
-		spanArray.push(span);
-		console.log(spanArray);
-		
-		
-	}, i*350);
-		
-		
-	});
-	
-	// spanArray contains a span having a textNode containing every letter from greeting
-	
+
+});
 	
 
 	
-	
-	console.log(RandomColor());
-	
-	
-});
