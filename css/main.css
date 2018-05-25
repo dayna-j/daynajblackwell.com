@@ -9,6 +9,7 @@ html,body {
 
 .hidden{display: none;}
 .noSelect{user-select: none;}
+.colored{background-color: red;}
 
 body{
 	width: 100%;
@@ -80,7 +81,8 @@ nav ul li a.header-link{
 nav ul li a.header-link:hover{
 	background-color: #000000;
 	
-	color: #DFD7DE
+	color: #DFD7DE;
+	color: floralwhitepale;
 /*	background-color: darkslategrey;*/
 }
 
@@ -94,6 +96,7 @@ nav ul li a.header-link:active{
 	display: none;
 	position: absolute;
 	top: 10;
+	right: 0;
 	z-index: 10000;
 	
 	
@@ -115,8 +118,8 @@ nav ul li a.header-link:active{
 }
 
 .about-content{
-    margin: 60px auto;
-    max-width: 350px;
+/*    margin: 60px auto;*/
+    max-width: 375px;
     text-align: center;
 /*		background-color: aquamarine;*/
 	
@@ -125,7 +128,14 @@ nav ul li a.header-link:active{
 /*		border: 1px inset #B184AB;*/
 		border-top: none;
 		border-left: none;
-		padding: 15px;/*new*/
+		padding: 25px;
+	
+/*
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+*/
 		
 }
 

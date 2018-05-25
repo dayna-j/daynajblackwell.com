@@ -10,12 +10,6 @@
 
 
 		
-		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-
-		<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-		
-		<link href="https://fonts.googleapis.com/css?family=Exo|Roboto" rel="stylesheet">
-		
 		<link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
 
 		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -24,18 +18,20 @@
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" />
 		
-		<link rel="stylesheet" href="css/main.css" type="text/css">
-		
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+		<link rel="stylesheet" href="/css/main.css" type="text/css">
 		
 		<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 		
-		<script type="text/javascript" src="/js/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+		
+		<script type="text/javascript" src="../js/main.js"></script>
 		
 	</head>
+	
+	
 	<body id = 'contactBody'>
 		
 		<header>
@@ -60,31 +56,14 @@
 		<div class = 'content-container'>
 			
 			<div id = 'formContainer' >
+				
 				<h1 class = 'noSelect'>How can I help?</h1>
 				<h4 class = 'noSelect'>Enter your details below</h4>
-				
-				<form action="contactForm.php" id = 'contactForm'>
-<!--
-					<label for="name">
-  					Name: <input type="text" id="nameInput" name="full_name">
-					</label>
--->
-					
-  					<input type="email" id="emailInput" name="email" placeholder="Enter your email">
-					
-<!--					<input type= "textarea" placeholder="Message" name = "messageBody">-->
-					
+				<form method="post" action="contactForm.php" id = 'contactForm'>
+ 					<input type="email" id="emailInput" name="email" placeholder="Enter your email">
 					<textarea name = "message" rows = '15' placeholder="Message"></textarea>
-					
-					
-					<input type = 'submit'>
-				
-				
+					<input type = 'submit' id = 'submit' name = 'submit' value = 'Submit'>	
 				</form>
-				
-				
-				
-			
 			</div>
 			
 		</div> <!-- close content-container -->

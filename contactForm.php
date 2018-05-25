@@ -1,8 +1,9 @@
 <?php
-    $email = $_POST['email'];
+
+		$email = $_POST['email'];
     $message = $_POST['message'];
 
-    $from = 'From: www.daynajblackwell.com contact form'; 
+    $from = 'From: daynajblackwell.com'; 
     $to = 'dayna-j@daynajblackwell.com'; 
     $subject = 'Contact form submission';
 
